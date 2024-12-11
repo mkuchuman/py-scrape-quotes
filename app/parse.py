@@ -13,7 +13,7 @@ class Quote:
     tags: list[str]
 
 
-QUOTES_FIELDS = [fields.name for fields in fields(Quote)]
+QUOTES_FIELDS = [field.name for field in fields(Quote)]
 
 
 def get_quote(quote: Tag) -> Quote:
